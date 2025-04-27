@@ -1,1 +1,38 @@
-# OPPIntensiveCourse
+# Curso Intensivo de Programación Orientada a Objetos (5 días × 5 h/día)
+
+¡Hola **Faus*! Aquí tienes un temario detallado en **Markdown**, listo para tu repositorio. Cada día son **5 horas**, con:
+
+- **Temas clave**  
+- **Recursos oficiales y tutoriales**  
+- **Prácticas sugeridas**  
+
+---
+
+| **Día** | **Horas** | **Temas principales**                              | **Recursos & documentación**                                                                                                                                                                                                            | **Prácticas sugeridas**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|:-------:|:---------:|----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **1**   | 5 h       | **Fundamentos de OOP**<br>• Clases vs. Structs<br>• Instancias<br>• Propiedades & métodos | - [Swift Book: Classes and Structures](https://docs.swift.org/swift-book/LanguageGuide/ClassesAndStructures.html)  <br>- [RayWenderlich: OOP in Swift](https://www.raywenderlich.com/…/oop-in-swift)                                  | 1. Crea clase `Persona` (nombre, edad) + método `presentarse()`.<br>2. Modela `Vehículo` como clase (coche, moto) con atributos y `arrancar()`.<br>3. Reescribe `Vehículo` como `struct` y experimenta paso por valor vs. referencia.<br>4. Reflexiona 10 min: ventajas/desventajas de clases y estructuras en Swift.                                                                                                                                                                                                                                                             |
+| **2**   | 5 h       | **Encapsulación & Control de acceso**<br>• `private`, `public`, etc.<br>• Propiedades computadas<br>• Observers<br>• Inicializadores | - [Swift Book: Access Control](https://docs.swift.org/swift-book/LanguageGuide/AccessControl.html)  <br>- [HackingWithSwift: Swift Access Control](https://www.hackingwithswift.com/articles)                                         | 1. Extiende `Persona` con propiedades privadas y getters/setters con validación de edad.<br>2. Diseña `CuentaBancaria` con saldo privado + métodos `depositar(_:)`, `retirar(_:)` validando sobregiro.<br>3. Añade propiedad computada `saldoFormateado` (String con “$”).<br>4. Escribe tests manuales: qué pasa si retiras más del saldo.                                                                                                                                                                                                                                     |
+| **3**   | 5 h       | **Herencia & Polimorfismo**<br>• Jerarquías de clases<br>• `override`<br>• Polimorfismo<br>• Downcasting seguro | - [Swift Book: Inheritance & Overriding](https://docs.swift.org/swift-book/LanguageGuide/Inheritance.html)  <br>- [objc.io: Polymorphism Demystified](https://www.objc.io/issues/…/polymorphism/) <br>- YouTube: “Swift Inheritance” | 1. Crea clase base `Animal` con `hacerSonido()` y subclases `Perro`, `Gato` que sobreescriban.<br>2. Escribe función que reciba `[Animal]` y ejecute `hacerSonido()`, demuestra polimorfismo.<br>3. Practica downcasting con `as? Perro` para acceder a `ladrarFuerte()`.<br>4. Documenta en tu README: “Cómo Swift implementa polimorfismo”.                                                                                                                                                                                                                                         |
+| **4**   | 5 h       | **Principios SOLID**<br>• S (Single Responsibility)<br>• O (Open/Closed)<br>• L (Liskov)<br>• I (Interface Segregation)<br>• D (Dependency Inversion) | - “Clean Code” R. C. Martin – capítulos SOLID  <br>- [RayWenderlich: SOLID in Swift](https://www.raywenderlich.com/…/solid-in-swift)  <br>- [Refactoring.Guru: SOLID Principles](https://refactoring.guru/solid)                  | 1. Refactoriza `CuentaBancaria` para SRP: extrae validación de transacciones a otro objeto.<br>2. Define protocolos `Transferible` y `Pagable` para I-Interface Segregation.<br>3. Implementa Inyección de Dependencias en clase `Notificador` (email vs. SMS).<br>4. Crea pequeños snippets que muestren cada principio y súbelos a tu repo con comentarios explicativos.                                                                                                                                                                                                                                                      |
+| **5**   | 5 h       | **Patrones de Diseño & Mini-proyecto**<br>• Factory, Singleton<br>• Adapter, Decorator<br>• Observer, Strategy | - [Refactoring.Guru: Design Patterns en Swift](https://refactoring.guru/design-patterns/swift)  <br>- RayWenderlich: [Design Patterns Swift](https://www.raywenderlich.com/…/design-patterns-swift) <br>- “Head First Design Patterns” | **Mini-proyecto “Gestor de Tareas”**:<br>1. Clase `Tarea` con estados (Pendiente, En Progreso, Completada).<br>2. **Factory**: método estático `crearTarea(tipo:)`.<br>3. **Observer**: notifica a UI (ej. `NotificationCenter`) al cambiar estado.<br>4. **Strategy**: ordena tareas por prioridad o fecha.<br>5. Documenta en README: explica cómo encaja cada patrón, diagramas UML opcionales. |
+
+---
+
+## 📚 Recursos extra
+
+- **Repos de práctica**  
+  - [Exercism.io Swift Track](https://exercism.org/tracks/swift)  
+  - [LeetCode – OOP Problems](https://leetcode.com/problemset/all/?topicSlugs=object-oriented)  
+
+- **Lecturas recomendadas**  
+  - “Object-Oriented Design Principles” en freeCodeCamp  
+  - “Understanding OOP through Real-World Examples” en Medium  
+
+- **Tips de aprendizaje**  
+  - Al final de cada día, escribe un **diario de 10 min** con dudas y hallazgos.  
+  - Publica tu progreso en un **gist** o **repo**; ¡la comunidad puede darte feedback!  
+  - Si quieres profundizar en algún patrón o necesitas ejemplos de código, avísame y lo revisamos juntos.  
+
+---
+
+> **¡A por todas, Faus!** Con este plan de 25 horas intensivas tendrás una base sólida en OOP y patrones de diseño. 🚀  
